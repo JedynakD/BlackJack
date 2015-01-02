@@ -1,0 +1,7 @@
+Napisaæ gre w blackjacka. Gracz gra przeciwko komputerowi (komputer reprezentuje krupiera):
+  - stworzyæ kolekcje zawieraj¹ca talie kart (52)
+  - zaimplementowaæ opcje gry: “New Game”, “Draw”, “Pass”, “Quit”
+    -  “New Game”: potasowaæ karty i czekaæ na ruch gracza. Gracz mo¿e wybraæ jedna z dwóch opcji „Draw” lub „Pass”
+    -  „Draw”    : pobierana jest karta i jej wartoœæ sumowana z suma kart ju¿ pobranych. Jeœli suma wyci¹gniêtych kart jest wiêksza ni¿ 21 -> wówczas gracz przegrywa
+    -  „Pass”    : komputer losuje karty dla krupiera, uruchamiany jest algorytm "AI" na podstawie którego komputer decyduje czy losuje kolejna karty czy tez nie.  
+  - Jeœli zarówno komputer jak i gracz przekrocz¹ wartoœæ 21 wówczas wygrywa ten którego wartoœæ jest bli¿sza 21.
