@@ -20,7 +20,7 @@ public class Player {
 		System.out.println("Player passes");
 	}
 	
-	public void showYourCard(){
-		System.out.println(playersCard);
+	public Card showYourCard(){
+		return playersCard;
 	}
 }

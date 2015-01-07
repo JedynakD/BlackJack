@@ -22,7 +22,7 @@ public class Game {
 			if (yourChoice == 1) {
 				playerHuman.draw();
 				System.out.println("You drawn: ");
-				playerHuman.showYourCard();
+				System.out.println(playerHuman.showYourCard());
 			}
 			if (yourChoice == 0) {
 				System.out.println("Your score: " + humanScore.calulateScore());
@@ -40,6 +40,6 @@ public class Game {
 
 		Judge judge = new Judge(pcScore, humanScore);
 		System.out.println("Sum of PC points: " + pcScore.calulateScore());
-		judge.calculateWinner();
+		System.out.println(judge.calculateWinner());
 	}
 }

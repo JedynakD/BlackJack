@@ -10,26 +10,25 @@ public class Judge {
 		this.humanScore = humanScore;
 	}
 
-	public void calculateWinner() {
+	public Winner calculateWinner() {
 		int pcSum = pcScore.calulateScore();
 		int yourSum = humanScore.calulateScore();
 
 		if (pcSum <= 21 && yourSum <= 21) {
 			if (pcSum > yourSum) {
-				System.out.println("PC wins.");
+				return Winner.PC;
 			} else if (yourSum > pcSum) {
-				System.out.println("You win.");
+				return Winner.HUMAN;
 			}
 		} else if (pcSum > yourSum && yourSum <= 21) {
-			System.out.println("You win.");
+			return Winner.HUMAN;
 		} else if (yourSum > pcSum && pcSum <= 21) {
-			System.out.println("PC wins.");
+			return Winner.PC;
 		} else if (pcSum > yourSum) {
-			System.out.println("PC wins.");
+			return Winner.PC;
 		} else if (yourSum > pcSum) {
-			System.out.println("You win.");
-		} else if (yourSum == pcSum) {
-			System.out.println("Tie.");
+			return Winner.HUMAN;
 		}
+		return Winner.TIE;
 	}
 }

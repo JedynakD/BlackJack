@@ -2,18 +2,18 @@ package jack;
 
 public class AI {
 	private Player player;
-	private ScoreCalculator score; 
+	private ScoreCalculator calculator; 
 
-	public AI(Player player,ScoreCalculator score) {
+	public AI(Player player,ScoreCalculator calculator) {
 		this.player = player;
-		this.score = score;
+		this.calculator = calculator;
 	}
 
 	public void controlPlayer() {
 		do {
 			player.draw();
 			player.showYourCard();
-		} while (score.calulateScore() < 15);
+		} while (calculator.calulateScore() < 15);
 		player.pass();
 	}
 }
