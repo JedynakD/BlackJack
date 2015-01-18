@@ -8,7 +8,7 @@ public class ScoreCalculator {
         this.playerDeck = playerDeck;
     }
 
-    public int calulateScore() {
+    public int calculateScore() {
         score = 0;
         for (Card card : playerDeck.getCardDeck()) {
             score = score + card.getValue();

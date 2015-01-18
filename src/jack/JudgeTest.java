@@ -22,8 +22,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnThatPcWinsWhenPcScoreAndHumanScoreIsLessThanTwentyOneButPcScoreIsBigger() {
-        when(mockedHumanScore.calulateScore()).thenReturn(5);
-        when(mockedPcScore.calulateScore()).thenReturn(15);
+        when(mockedHumanScore.calculateScore()).thenReturn(5);
+        when(mockedPcScore.calculateScore()).thenReturn(15);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 
@@ -32,8 +32,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnThatHumanWinWhenPcScoreAndHumanScoreIsLessThanTwentyOneButHumanScoreIsBigger() {
-        when(mockedHumanScore.calulateScore()).thenReturn(20);
-        when(mockedPcScore.calulateScore()).thenReturn(15);
+        when(mockedHumanScore.calculateScore()).thenReturn(20);
+        when(mockedPcScore.calculateScore()).thenReturn(15);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 
@@ -42,8 +42,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnThatHumanWinWhenPcScoreIsMoreThanTwentyOneButHumanScoreIsLessOrEqualTwentyOne() {
-        when(mockedHumanScore.calulateScore()).thenReturn(20);
-        when(mockedPcScore.calulateScore()).thenReturn(23);
+        when(mockedHumanScore.calculateScore()).thenReturn(20);
+        when(mockedPcScore.calculateScore()).thenReturn(23);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 
@@ -52,8 +52,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnThatPcWinWhenHumanScoreIsMoreThanTwentyOneButPcScoreIsLessOrEqualTwentyOne() {
-        when(mockedHumanScore.calulateScore()).thenReturn(26);
-        when(mockedPcScore.calulateScore()).thenReturn(21);
+        when(mockedHumanScore.calculateScore()).thenReturn(26);
+        when(mockedPcScore.calculateScore()).thenReturn(21);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 
@@ -62,8 +62,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnThatPcWinsWhenPcScoreAndHumanScoreIsMoreThanTwentyOneButPcScoreIsBigger() {
-        when(mockedHumanScore.calulateScore()).thenReturn(32);
-        when(mockedPcScore.calulateScore()).thenReturn(50);
+        when(mockedHumanScore.calculateScore()).thenReturn(32);
+        when(mockedPcScore.calculateScore()).thenReturn(50);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 
@@ -72,8 +72,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnThatHumanWinWhenPcScoreAndHumanScoreIsMoreThanTwentyOneButHumanScoreIsBigger() {
-        when(mockedHumanScore.calulateScore()).thenReturn(29);
-        when(mockedPcScore.calulateScore()).thenReturn(24);
+        when(mockedHumanScore.calculateScore()).thenReturn(29);
+        when(mockedPcScore.calculateScore()).thenReturn(24);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 
@@ -82,8 +82,8 @@ public class JudgeTest {
 
     @Test
     public void shouldReturnTieWhenPcScoreAndHumanScoreAreEqual() {
-        when(mockedHumanScore.calulateScore()).thenReturn(12);
-        when(mockedPcScore.calulateScore()).thenReturn(12);
+        when(mockedHumanScore.calculateScore()).thenReturn(12);
+        when(mockedPcScore.calculateScore()).thenReturn(12);
         judge = new Judge(mockedPcScore, mockedHumanScore);
         result = judge.calculateWinner();
 

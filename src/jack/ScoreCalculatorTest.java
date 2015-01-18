@@ -17,7 +17,7 @@ public class ScoreCalculatorTest {
 
     @Test
     public void shouldReturnZeroWhenNoCardAdded() {
-        int result = calculator.calulateScore();
+        int result = calculator.calculateScore();
 
         assertEquals(0, result);
     }
@@ -25,7 +25,7 @@ public class ScoreCalculatorTest {
     @Test
     public void shouldReturnFiveWhenCardWithValueOfFiveAdded() {
         deck.addCardToCardDeck(Card.FIVE);
-        int result = calculator.calulateScore();
+        int result = calculator.calculateScore();
 
         assertEquals(5, result);
     }
@@ -34,7 +34,7 @@ public class ScoreCalculatorTest {
     public void shouldReturnTenWhenWhenCardWithValueOfSixAndCardWithValueOfFourAdded() {
         deck.addCardToCardDeck(Card.SIX);
         deck.addCardToCardDeck(Card.FOUR);
-        int result = calculator.calulateScore();
+        int result = calculator.calculateScore();
 
         assertEquals(10, result);
     }
@@ -45,7 +45,7 @@ public class ScoreCalculatorTest {
         deck.addCardToCardDeck(Card.SEVEN);
         deck.addCardToCardDeck(Card.ACE);
         deck.addCardToCardDeck(Card.KING);
-        int result = calculator.calulateScore();
+        int result = calculator.calculateScore();
 
         assertEquals(30, result);
     }

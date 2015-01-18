@@ -13,7 +13,7 @@ public class AI {
         do {
             player.draw();
             player.showYourCard();
-        } while (calculator.calulateScore() < 15);
+        } while (calculator.calculateScore() < 15);
         player.pass();
     }
 }

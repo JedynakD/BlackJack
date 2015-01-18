@@ -25,11 +25,11 @@ public class Game {
                 System.out.println(playerHuman.showYourCard());
             }
             if (yourChoice == 0) {
-                System.out.println("Your score: " + humanScore.calulateScore());
+                System.out.println("Your score: " + humanScore.calculateScore());
             }
         }
         playerHuman.pass();
-        System.out.println("Sum of your points: " + humanScore.calulateScore());
+        System.out.println("Sum of your points: " + humanScore.calculateScore());
 
         System.out.println("Pc starts");
         CardDeck pcDeck = new CardDeck();
@@ -39,7 +39,7 @@ public class Game {
         ai.controlPlayer();
 
         Judge judge = new Judge(pcScore, humanScore);
-        System.out.println("Sum of PC points: " + pcScore.calulateScore());
+        System.out.println("Sum of PC points: " + pcScore.calculateScore());
         System.out.println(judge.calculateWinner());
     }
 }

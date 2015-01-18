@@ -11,8 +11,8 @@ public class Judge {
     }
 
     public Winner calculateWinner() {
-        int pcSum = pcScore.calulateScore();
-        int yourSum = humanScore.calulateScore();
+        int pcSum = pcScore.calculateScore();
+        int yourSum = humanScore.calculateScore();
 
         if (pcSum <= 21 && yourSum <= 21) {
             if (pcSum > yourSum) {
