@@ -1,6 +1,7 @@
 package jack;
 
 public class AI {
+    static final int MAX_SCORE = 18;
     private Player player;
     private ScoreCalculator calculator;
 
@@ -10,10 +11,10 @@ public class AI {
     }
 
     public void controlPlayer() {
-        do {
+        while ((calculator.calculateScore() < MAX_SCORE)) {
             player.draw();
             player.showYourCard();
-        } while (calculator.calculateScore() < 15);
+        }
         player.pass();
     }
 }
