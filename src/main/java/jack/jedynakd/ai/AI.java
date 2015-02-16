@@ -1,7 +1,10 @@
-package jack;
+package jack.jedynakd.ai;
+
+import jack.jedynakd.player.Player;
+import jack.jedynakd.score.ScoreCalculator;
 
 public class AI {
-    static final int MAX_SCORE = 18;
+    static private final int MAX_SCORE = 18;
     private Player player;
     private ScoreCalculator calculator;
 

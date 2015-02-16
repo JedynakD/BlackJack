@@ -1,4 +1,4 @@
-package jack;
+package jack.jedynakd.score;
 
 public enum Winner {
 

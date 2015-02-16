@@ -1,4 +1,4 @@
-package jack;
+package jack.jedynakd.cards;
 
 import java.util.ArrayList;
 import java.util.Collections;

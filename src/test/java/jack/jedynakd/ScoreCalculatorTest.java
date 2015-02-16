@@ -1,7 +1,10 @@
-package jack;
+package jack.jedynakd;
 
+import jack.jedynakd.cards.Card;
+import jack.jedynakd.cards.CardDeck;
 import org.junit.Before;
 import org.junit.Test;
+import jack.jedynakd.score.ScoreCalculator;
 
 import static org.junit.Assert.assertEquals;
 

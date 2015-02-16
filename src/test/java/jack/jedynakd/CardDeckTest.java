@@ -1,5 +1,7 @@
-package jack;
+package jack.jedynakd;
 
+import jack.jedynakd.cards.Card;
+import jack.jedynakd.cards.CardDeck;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,9 +10,8 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class CardDeckTest {
-    CardDeck cardDeck;
-    List<Card> deck;
-    Card card;
+    private CardDeck cardDeck;
+    private List<Card> deck;
 
     @Before
     public void beforeCardDeckTest() {

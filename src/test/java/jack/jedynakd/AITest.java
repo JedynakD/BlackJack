@@ -1,8 +1,11 @@
-package jack;
+package jack.jedynakd;
 
+import jack.jedynakd.ai.AI;
+import jack.jedynakd.player.Player;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InOrder;
+import jack.jedynakd.score.ScoreCalculator;
 
 import static org.mockito.Mockito.*;
 
@@ -22,7 +25,7 @@ public class AITest {
 
     @Test
     public void shouldControlPlayerUntilScoreIsEighteen() {
-        when(calculator.calculateScore()).thenReturn(5).thenReturn(10).thenReturn(AI.MAX_SCORE);
+        when(calculator.calculateScore()).thenReturn(5).thenReturn(10).thenReturn(18);
 
         ai.controlPlayer();
 

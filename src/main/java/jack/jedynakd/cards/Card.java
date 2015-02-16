@@ -1,4 +1,4 @@
-package jack;
+package jack.jedynakd.cards;
 
 public enum Card {
 
@@ -11,7 +11,7 @@ public enum Card {
         this.value = value;
     }
 
-    ;
+
 
     public int getValue() {
         return value;

@@ -1,5 +1,8 @@
-package jack;
+package jack.jedynakd;
 
+import jack.jedynakd.cards.Card;
+import jack.jedynakd.cards.CardDeck;
+import jack.jedynakd.player.Player;
 import org.junit.Before;
 import org.junit.Test;
 

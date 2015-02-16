@@ -1,4 +1,7 @@
-package jack;
+package jack.jedynakd.player;
+
+import jack.jedynakd.cards.Card;
+import jack.jedynakd.cards.CardDeck;
 
 public class Player {
 

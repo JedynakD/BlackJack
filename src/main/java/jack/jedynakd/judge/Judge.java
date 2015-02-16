@@ -1,4 +1,7 @@
-package jack;
+package jack.jedynakd.judge;
+
+import jack.jedynakd.score.ScoreCalculator;
+import jack.jedynakd.score.Winner;
 
 public class Judge {
 

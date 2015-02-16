@@ -1,4 +1,10 @@
-package jack;
+package jack.jedynakd.game;
+
+import jack.jedynakd.judge.Judge;
+import jack.jedynakd.player.Player;
+import jack.jedynakd.score.ScoreCalculator;
+import jack.jedynakd.ai.AI;
+import jack.jedynakd.cards.CardDeck;
 
 import java.util.Scanner;
 
@@ -21,7 +27,7 @@ public class Game {
             yourChoice = in.nextInt();
             if (yourChoice == 1) {
                 playerHuman.draw();
-                System.out.println("You drawn: ");
+                System.out.println("You drew: ");
                 System.out.println(playerHuman.showYourCard());
             }
             if (yourChoice == 0) {
