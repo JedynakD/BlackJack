@@ -1,5 +1,4 @@
 *.iml
 .idea
-pom.xml
 BlackJack.iml
-target
+pom.xml
